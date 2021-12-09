@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+<url>
+  <loc>https://kristina1801.github.io/</loc>
+  <lastmod>2021-12-09T19:41:54+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://kristina1801.github.io/about.html</loc>
+  <lastmod>2021-12-09T19:41:54+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://kristina1801.github.io/price.html</loc>
+  <lastmod>2021-12-09T19:41:54+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://kristina1801.github.io/contact.html</loc>
+  <lastmod>2021-12-09T19:41:54+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.75</priority>
+</url>
+<url>
+  <loc>https://kristina1801.github.io/gallery.html</loc>
+  <lastmod>2021-12-09T19:41:54+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://kristina1801.github.io/author.html</loc>
+  <lastmod>2021-12-09T19:41:54+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+
+</urlset>
