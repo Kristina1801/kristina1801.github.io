@@ -190,7 +190,7 @@ nav li {
   box-sizing: border-box;
 }
 .about-split:nth-child(2) {
-  background-image: url("/img/about-photo.jpg");
+  background-image: url("../img/about-photo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -204,7 +204,7 @@ nav li {
 #quote {
   position: relative;
   display: flex;
-  background-image: url("/img/quote-photo.jpg");
+  background-image: url("../img/quote-photo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 -400px;
@@ -436,6 +436,7 @@ form button {
 }
 .author-split img {
   width: 80%;
+  height: 550px;
 }
 .author-split h1 {
   font-size: 60px;
