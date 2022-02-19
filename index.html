@@ -1,421 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- META TAGS -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/logo-icon.png" type="image/png" />
-    <link rel="stylesheet" href="style/style.css" />
-    <meta name="author" content="mailto:21@ict.edu.rs" />
+    <meta name="author" content="mailto:krstina.bakic.64.21@ict.edu.rs" />
     <meta
       name="keywords"
-      content="Teretana, Fitnes, Trening, Tegovi, Zdravlje, Kardio"
+      content="Web Design, UX/UI, Web Developer, Design, Graphics, Programiranje"
     />
     <meta
       name="description"
-      content="Spiritus je teretana i fitnes centar sa najkvalitetnijom opremom i trenerima."
+      content="Web developer sa 3+ godina iskustva sa mogućnostima da efikasno
+      komuniciram i ispunim najzahtevnije želje klijenata."
     />
-    <meta name="copyright" content="Sva prava zadržava Spiritus 2021" />
+    <meta name="copyright" content="Sva prava zadržava Autor sajta." />
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/style.min.css" />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <title>Spiritus - Teretana</title>
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon" />
+    <title>Kristina Bakić - Portfolio</title>
   </head>
   <body>
-    <!-- NAVIGATION -->
+    <!-- HEADER -->
     <header>
-      <nav>
-        <div id="brand-logo">
-          <a href="index.html">
-          <img src="img/logo1.png" alt="Logo" />
-          </a>
+      <div class="container">
+        <div id="logo">
+          <a href="#"><h2>Kristina Bakić</h2></a>
         </div>
-        <ul class="nav-list font-primary">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link active">POČETNA</a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">O NAMA</a>
-          </li>
-          <li class="nav-item">
-            <a href="price.html" class="nav-link">CENOVNIK</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link">KONTAKT</a>
-          </li>
-          <li class="nav-item">
-            <a href="gallery.html" class="nav-link">GALERIJA</a>
-          </li>
-          <li class="nav-item">
-            <a href="author.html" class="nav-link">AUTOR</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- SHOWCASE -->
-      <div id="showcase">
-        <div class="showcase-split">
-          <h1 class="font-primary text-white">TERETANA SPIRITUS</h1>
-          <div class="btn-wrap mt-1">
-            <a class="btn-primary" href="about.html">PROČITAJ VIŠE</a>
-            <a class="btn-primary" href="about.html"
-              ><i class="fas fa-arrow-right"></i
-            ></a>
-          </div>
-        </div>
-        <div class="showcase-split"></div>
+        <nav>
+          <ul>
+            <li><a href="#about">about</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#testimonials">testimonials</a></li>
+            <li><a href="#contact" class="contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
-    <!-- CAATEGORIES -->
-    <div id="categories">
-      <div class="category">
-        <div class="dark-overlay"></div>
-        <div class="inner-category text-center">
-          <img src="img/category-icon-1.png" alt="category icon" />
-          <h1 class="text-white font-primary">GRUPNI TRENING</h1>
-          <p class="text-white font-secondary">
-            Vežbajmo zajedno!
-          </p>
-        </div>
-      </div>
-      <div class="category">
-        <div class="dark-overlay"></div>
-        <div class="inner-category text-center">
-          <img src="img/category-icon-2.png" alt="category icon" />
-          <h1 class="text-white font-primary">PERSONALNI TRENER</h1>
-          <p class="text-white font-secondary">
-            Uz naš stručan tim trenera, postigni najbolje rezultate.
-          </p>
-        </div>
-      </div>
-      <div class="category">
-        <div class="dark-overlay"></div>
-        <div class="inner-category text-center">
-          <img src="img/category-icon-3.png" alt="category icon" />
-          <h1 class="text-white font-primary">KARDIO</h1>
-          <p class="text-white font-secondary">
-            Cardio treningom ćete najbrže sagoreti kalorije.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- FEATURES -->
-    <div id="features">
-      <h1 class="font-primary text-center head-title">
-        POSTAVI CILJ I TESTIRAJ SVOJE LIMITE
-      </h1>
-      <p class="text-muted text-center head-p font-secondary">
-        Radi na sebi, to je najbolja investicija za kojom nikada nećeš žaliti. Pridruži nam se i olakšaj put do željenih rezultata uz pomoć naših trenera koji će ti pomoći da postaneš najbolja i zdravija verzija sebe.
-      </p>
-      <div id="features-wrap" class="mt-3">
-        <div class="feature text-center">
-          <img src="img/feature-icon-1.png" alt="feature" />
-          <h1 class="font-primary text-uppercase">ZDRAVLJE</h1>
-          <p class="text-muted font-secondary">
-            Sigurno ste čuli staru latinsku poslovicu "U zdravom telu, zdrav duh". Redovan trening ima podjednako dobar uticaj i na fizičko i na mentalno zdravlje.
-          </p>
-        </div>
-        <div class="feature text-center">
-          <img src="img/feature-icon-2.png" alt="feature" />
-          <h1 class="font-primary text-uppercase">KVALITET</h1>
-          <p class="text-muted font-secondary">
-            Teretana Spiritus je napravljena po svetskim standardima, nudi najsavremenije uslove za trening uz pomoć najkvalitetnije opreme.
-          </p>
-        </div>
-        <div class="feature text-center">
-          <img src="img/feature-icon-3.png" alt="feature" />
-          <h1 class="font-primary text-uppercase">POČNI ODMAH</h1>
-          <p class="text-muted font-secondary">
-            Poklanjamo Vam besplatan prvi trening, kontaktirajte nas i zakažite Vaš termin.
-          </p>
-        </div>
-        <div class="feature text-center">
-          <img src="img/feature-icon-4.png" alt="feature" />
-          <h1 class="font-primary text-uppercase">PRIDRUŽI NAM SE</h1>
-          <p class="text-muted font-secondary">
-            Mi smo tu da promenimo granice Vaših mogućnosti. Postani deo našeg tima. Pridruži nam se.
-          </p>
-        </div>
+    <!-- COVER -->
+    <div id="cover">
+      <div class="dark-overlay"></div>
+      <div id="cover-wrap">
+        <img src="img/author-1.jpg" alt="author" />
+        <h1>Kristina Bakić</h1>
+        <h2>Creative Freelancer & Full Stack Web Developer</h2>
       </div>
     </div>
     <!-- ABOUT -->
     <div id="about">
-      <div class="about-split">
-        <div class="about-wrap">
-          <h1 class="text-white text-uppercase font-primary">
-            NAJBOLJI NAČIN DA IZGRADITE SEBE
-          </h1>
-          <p class="font-secondary text-muted">
-            Budi jači od svojih izgovora! Kako da postigneš dobre rezultate? Za početak - UČLANI SE!
-          </p>
-          <div class="btn-wrap mt-3">
-            <a class="btn-primary" href="about.html">PROČITAJ VIŠE</a>
-            <a class="btn-primary" href="about.html"
-              ><i class="fas fa-arrow-right"></i
-            ></a>
+      <div class="container">
+        <div id="about-wrap">
+          <div id="about-image">
+            <img src="img/author-2.jpg" alt="author2" />
           </div>
-        </div>
-      </div>
-
-      <div class="about-split"></div>
-    </div>
-
-    <!-- QUOTE -->
-    <div id="quote">
-      <div class="dark-overlay"></div>
-      <div class="quote-wrap">
-        <i class="fas fa-quote-left text-white fa-4x"></i>
-        <h1 class="text-white font-primary mt-3">
-          Vodi računa o svom telu, jedino u njemu možeš živeti.
-        </h1>
-        <h2 class="text-white font-secondary mt-3">DŽIM RON</h2>
-      </div>
-    </div>
-    <!-- PRICING -->
-    <div id="pricing">
-      <div class="pricing-head">
-        <h1 class="font-primary text-white text-uppercase">
-          IZABERITE ODGOVARAJUĆI PROGRAM
-        </h1>
-        <div class="btn-wrap">
-          <a class="btn-primary" href="price.html">PROČITAJ VIŠE</a>
-          <a class="btn-primary" href="price.html"
-            ><i class="fas fa-arrow-right"></i
-          ></a>
-        </div>
-      </div>
-      <div class="pricing-section">
-        <div class="price-plan text-center">
-          <h1 class="text-uppercase text-white font-primary"><sup>&euro;</sup>19</h1>
-          <p class="text-primary font-secondary">PER MONTH</p>
-          <h2 class="text-uppercase text-white font-primary mt-3">
-            1 MESEC NEOGRANIČENO
-          </h2>
-          <p class="text-uppercase text-white font-secondary mt-3 plan-feature">
-            Teretana 06-16h
-          </p>
-          <hr class="mt-3" />
-          <p class="text-uppercase text-white font-secondary mt-3 plan-feature">
-            Kardio
-          </p>
-          <hr class="mt-3" />
-          <p class="text-uppercase text-white font-secondary mt-3 plan-feature">
-            Grupni trening
-          </p>
-
-          <div class="btn-wrap mt-3">
-            <a class="btn-primary" href="#">PROČITAJ VIŠE</a>
-            <a class="btn-primary" href="#"
-              ><i class="fas fa-arrow-right"></i
-            ></a>
-          </div>
-        </div>
-        <div class="price-plan text-center">
-          <h1 class="text-uppercase text-white font-primary"><sup>&euro;</sup>29</h1>
-          <p class="text-primary font-secondary">PER MONTH</p>
-          <h2 class="text-uppercase text-white font-primary mt-3">
-            1 MESEC NEOGRANIČENO
-          </h2>
-          <p class="text-uppercase text-white font-secondary mt-3 plan-feature">
-            Teretana 00-24h
-          </p>
-          <hr class="mt-3" />
-          <p class="text-uppercase text-white font-secondary mt-3 plan-feature">
-            Plan ishrane
-          </p>
-          <hr class="mt-3" />
-          <p class="text-uppercase text-white font-secondary mt-3 plan-feature">
-            Grupni trening
-          </p>
-
-          <div class="btn-wrap mt-3">
-            <a class="btn-primary" href="#">PROČITAJ VIŠE</a>
-            <a class="btn-primary" href="#"
-              ><i class="fas fa-arrow-right"></i
-            ></a>
-          </div>
-        </div>
-        <div class="price-plan text-center">
-          <h1 class="text-uppercase text-white font-primary"><sup>&euro;</sup>39</h1>
-          <p class="text-primary font-secondary">PER MONTH</p>
-          <h2 class="text-uppercase text-white font-primary mt-3">
-            1 MESEC NEOGRANIČENO
-          </h2>
-          <p class="text-uppercase text-white font-secondary mt-3 plan-feature">
-            Teretana 00-24h
-          </p>
-          <hr class="mt-3" />
-          <p class="text-uppercase text-white font-secondary mt-3 plan-feature">
-            1 MESEC NEOGRANIČENO
-          </p>
-          <hr class="mt-3" />
-          <p class="text-uppercase text-white font-secondary mt-3 plan-feature">
-            Plan ishrane
-          </p>
-
-          <div class="btn-wrap mt-3">
-            <a class="btn-primary" href="#">PROČITAJ VIŠE</a>
-            <a class="btn-primary" href="#"
-              ><i class="fas fa-arrow-right"></i
-            ></a>
+          <div id="about-info">
+            <h3>Discover</h3>
+            <h2>About Me</h2>
+            <hr />
+            <p class="about-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
+              minima, dignissimos neque ex suscipit iste veritatis quasi dolore
+              magnam. Omnis, vitae. Eligendi quisquam mollitia, animi ipsa minus
+              vero illo ratione.
+            </p>
+            <div id="stats">
+              <p class="info">Name : <span> Kristina Bakic</span></p>
+              <p class="info">Phone :<span> Kristina Bakic</span></p>
+              <p class="info">Experience :<span> Kristina Bakic</span></p>
+              <p class="info">Instagram :<span> Kristina Bakic</span></p>
+              <p class="info">Age :<span> Kristina Bakic</span></p>
+              <p class="info">Address :<span> Kristina Bakic</span></p>
+            </div>
+            <p class="btn"><a href="#">Hire Me!</a></p>
           </div>
         </div>
       </div>
     </div>
-    <!-- TEAM -->
-    <div id="team">
-      <div class="pricing-head">
-        <h1 class="font-primary text-uppercase">UPOZNAJTE NAŠ TIM</h1>
-        <div class="btn-wrap">
-          <a class="btn-primary" href="about.html">PROČITAJ VIŠE</a>
-          <a class="btn-primary" href="about.html"
-            ><i class="fas fa-arrow-right"></i
-          ></a>
+    <!-- SERVICES -->
+    <div id="services">
+      <div class="container">
+        <div class="title">
+          <h3>What I Do</h3>
+          <h2>My Services</h2>
+          <hr />
+        </div>
+        <div id="services-wrap">
+          <div class="service">
+            <img src="img/service-1.png" alt="service 1" />
+            <h4>Service Name</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quibusdam, voluptatum nihil! Accusamus eum itaque quibusdam!
+            </p>
+          </div>
+          <div class="service">
+            <img src="img/service-2.png" alt="service 1" />
+            <h4>Service Name</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quibusdam, voluptatum nihil! Accusamus eum itaque quibusdam!
+            </p>
+          </div>
+          <div class="service">
+            <img src="img/service-3.png" alt="service 1" />
+            <h4>Service Name</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quibusdam, voluptatum nihil! Accusamus eum itaque quibusdam!
+            </p>
+          </div>
+        </div>
+        <div id="stats-wrap">
+          <div class="stat">
+            <p class="stat-title">9+</p>
+            <p class="stat-subtitle">Years Of Experience</p>
+          </div>
+          <div class="stat">
+            <p class="stat-title">120 +</p>
+            <p class="stat-subtitle">Projects Done</p>
+          </div>
+          <div class="stat">
+            <p class="stat-title">50+</p>
+            <p class="stat-subtitle">Customers Satisfied</p>
+          </div>
+          <div class="stat">
+            <p class="stat-title">6+</p>
+            <p class="stat-subtitle">Awards Won</p>
+          </div>
         </div>
       </div>
-      <div class="team-wrap">
-        <div class="team-coach">
-          <img src="img/trainer-1.jpg" alt="trainer" />
-          <p class="text-primary font-secondary text-center text-uppercase">
-            MARKO, MUŠKI TRENER
-          </p>
+    </div>
+    <!-- PORTFOLIO -->
+    <div id="portfolio">
+      <div class="container">
+        <div class="title">
+          <h3>My Past Projects</h3>
+          <h2>Portfolio</h2>
+          <hr />
         </div>
-        <div class="team-coach">
-          <img src="img/trainer-2.jpg" alt="trainer" />
-          <p class="text-primary font-secondary text-center text-uppercase">
-            JELENA, ŽENSKI TRENER
-          </p>
+        <div id="portfolio-wrap">
+          <div class="project">
+            <a href="#">
+              <img src="img/project-1.png" alt="project 1" />
+              <h4>Spiritus</h4>
+              <p>HTML5/CSS3</p></a
+            >
+          </div>
+          <div class="project">
+            <a href="#">
+              <img src="img/project-2.png" alt="project 1" />
+              <h4>Kristina Bakic</h4>
+              <p>HTML5/CSS3/SASS</p></a
+            >
+          </div>
+          <div class="project">
+            <a href="#">
+              <img src="img/project-3.png" alt="project 1" />
+              <h4>Stay tuned...</h4>
+              <p>NEW PROJECTS SOON</p></a
+            >
+          </div>
         </div>
-        <div class="team-coach">
-          <img src="img/trainer-3.jpg" alt="trainer" />
-          <p class="text-primary font-secondary text-center text-uppercase">
-            PEĐA, DRŽI GRUPNE TRENINGE
-          </p>
+      </div>
+    </div>
+    <!-- TESTIMONIALS -->
+    <div id="testimonials">
+      <div class="container">
+        <div class="title">
+          <h3>People Said</h3>
+          <h2>Testimonials</h2>
+          <hr />
         </div>
-        <div class="team-coach">
-          <img src="img/trainer-4.jpg" alt="trainer" />
-          <p class="text-primary font-secondary text-center text-uppercase">
-            ALEKSA, DRŽI KARDIO
-          </p>
+        <div id="testimonials-wrap">
+          <div class="testimonial">
+            <img src="img/testimonial-1.jpg" alt="user" />
+            <div class="testimonial-text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis, dolorem!
+              </p>
+              <span> -Miki Manojlovic </span>
+            </div>
+          </div>
+          <div class="testimonial">
+            <img src="img/testimonial-2.jpg" alt="user" />
+            <div class="testimonial-text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis, dolorem!
+              </p>
+              <span> -Miki Manojlovic </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <!-- CONTACT -->
     <div id="contact">
-      <div class="pricing-head">
-        <h1 class="font-primary text-uppercase">KONTAKT</h1>
-        <div class="btn-wrap">
-          <a class="btn-primary" href="contact.html">PROČITAJ VIŠE</a>
-          <a class="btn-primary" href="contact.html"
-            ><i class="fas fa-arrow-right"></i
-          ></a>
+      <div class="container">
+        <div class="title">
+          <h3>Stay In Touch</h3>
+          <h2>Contact Me!</h2>
+          <hr />
         </div>
-      </div>
-      <div class="contact-wrap">
-        <div class="contact-split">
-          <h2 class="font-primary text-uppercase">Address</h2>
-          <p class="text-muted font-secondary">Krunska 1, Beograd</p>
-          <h2 class="font-primary text-uppercase mt-3">Phone</h2>
-          <p class="text-muted font-secondary">061-234/5678</p>
-          <h2 class="font-primary text-uppercase mt-3">Email</h2>
-          <p class="text-muted font-secondary">
-            <a href="mailto:test@test.com" class="text-primary">
-              spiritus&#64;gmail&#46;com</a
-            >
-          </p>
-          <p class="text-muted font-secondary mt-3">
-            Za sva pitanja i nedoumice koje imate nas možete kontaktirati, stojimo vam na raspolaganju 24h.
-          </p>
-        </div>
-        <div class="contact-split">
-          <form action="action.php" method="get">
-            <input type="text" name="FirstName" id="fname" placeholder="Ime" />
-            <input
-              type="text"
-              name="LastName"
-              id="lname"
-              placeholder="Prezime"
-            />
-            <input
-              type="text"
-              name="number"
-              id="number"
-              placeholder="Broj telefona"
-            />
-            <input type="email" name="email" id="email" placeholder="Email" />
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="Poruka..."
-            ></textarea>
-            <div class="btn-wrap">
-              <button class="btn-primary" type="submit">POŠALJI</button>
-              <a class="btn-primary" href="#"
-                ><i class="fas fa-arrow-right"></i
-              ></a>
+        <div id="contact-wrap">
+          <div id="contact-form">
+            <form action="#">
+              <input type="text" placeholder="Ime..." name="name" id="name" />
+              <input
+                type="email"
+                placeholder="Email..."
+                name="email"
+                id="email"
+              />
+              <textarea
+                name="question"
+                id="question"
+                cols="30"
+                placeholder="Pitanje..."
+                rows="10"
+              ></textarea>
+
+              <!-- <input type="submit" value="Posalji" /> -->
+              <button class="submit" type="submit">
+                Posalji <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+          <div id="contact-info">
+            <div class="contact-text">
+              <p>
+                <i class="fas fa-map-marker-alt"></i>
+                Svetog Petra, 1
+              </p>
+              <p>
+                <i class="fas fa-phone"></i>
+                Svetog Petra, 1
+              </p>
+              <p>
+                <i class="fas fa-envelope"></i>
+                Svetog Petra, 1
+              </p>
+              <p>
+                <i class="fas fa-at"></i>
+                Svetog Petra, 1
+              </p>
             </div>
-          </form>
+
+            <img src="img/map.png" alt="mapa" />
+          </div>
         </div>
       </div>
     </div>
-    <!-- FOOTER -->
     <footer>
-      <div class="upper-footer">
-        <div class="footer-wrap">
-          <div class="footer-column">
-            <img src="img/logo-footer.png" alt="logo-footer" />
-            <p class="text-muted font-secondary mt-3">
-              Pridruži se jednoj od najsavremenijih teretana i dođi da zajedno postižemo ciljeve i napredujemo.
-            </p>
-          </div>
-          <div class="footer-column text-center">
-            <h1 class="text-white font-primary">KONTAKT</h1>
-            <p class="text-muted mt-3 font-secondary">
-              <i class="fas fa-map-marker-alt"></i> Krunska 1, Beograd
-            </p>
-            <p class="text-muted mt-1 font-secondary">
-              <i class="fas fa-phone"></i> 061/123-4567
-            </p>
-            <p class="text-muted mt-1 font-secondary">
-              <i class="far fa-clock"></i> 00-24h
-            </p>
-            <p class="text-muted mt-1 font-secondary">
-              <i class="far fa-envelope"></i> spiritus&#64;gmail&#46;com
-            </p>
-          </div>
-          <div class="footer-column text-center">
-            <h1 class="text-white font-primary">STRANICE</h1>
-            <p class="font-primary mt-3">
-              <a href="index.html" class="text-muted">POČETNA</a>
-            </p>
-            <p class="font-primary mt-1">
-              <a href="about.html" class="text-muted">O NAMA</a>
-            </p>
-            <p class="font-primary mt-1">
-              <a href="price.html" class="text-muted">CENOVNIK</a>
-            </p>
-            <p class="font-primary mt-1">
-              <a href="gallery.html" class="text-muted">GALERIJA</a>
-            </p>
-            <p class="font-primary mt-1">
-              <a href="author.html" class="text-muted">AUTOR</a>
-            </p>
-          </div>
+      <div class="container">
+        <div id="footer-text">
+          <p>Kristina Bakić &copy; 2022</p>
         </div>
-      </div>
-      <div class="lower-footer">
-        <p class="font-secondary text-muted">
-          &copy; Spiritus Teretana 2021 zadržava sva prava
-        </p>
-        <div id="social">
-          <a href="#" class="text-white"
-            ><i class="fab fa-facebook-square"></i></a
-          ><a href="sitemap.xml" class="text-white"
-            ><i class="fas fa-sitemap"></i></a
-          ><a href="rss.xml" class="text-white"><i class="fas fa-rss"></i></a
-          ><a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+        <div id="footer-social">
+          <p>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+          </p>
+          <p>
+            <a href="#"><i class="fab fa-sass"></i></a>
+          </p>
+          <p>
+            <a href="#"><i class="fas fa-sitemap"></i></a>
+          </p>
+          <p>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+          </p>
         </div>
       </div>
     </footer>
