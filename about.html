@@ -14,7 +14,6 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css"
@@ -22,6 +21,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="css/style.min.css" />
+
     <link rel="shortcut icon" href="img/logo-icon1.ico" type="image/x-icon" />
     <title>Juliet Beauty Center</title>
   </head>
@@ -32,27 +33,18 @@
       class="navbar navbar-expand-lg position-absolute w-100 navbar-light primary-font"
     ></nav>
 
-    <!-- COVER -->
+    <!-- SECONDARY COVER -->
     <div
-      id="cover"
-      class="position-relative d-flex justify-content-center align-items-center"
+      id="secondary-cover"
+      class="about-bg d-flex justify-content-center align-items-center position-relative"
     >
-      <div
-        id="carousel"
-        class="carousel slide carousel-fade position-absolute"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner" id="carouselWrap"></div>
-      </div>
-      <div class="container position-relative px-5">
-        <h1 class="dark-color secondary-font mb--2">Juliet B.C.</h1>
-        <p class="p-font mx-sm-5 my-sm-0 m-0 my-4 mb-3">
-          Beauty centar namenjen Vama i Vašim željama. Kutak u kome ćete se
-          opustiti kao u udobnnosti svog doma i uživati.
-        </p>
-        <p class="mt-4">
-          <a href="about.html" class="primary-btn mx-sm-5 m-0">Otkrijte</a>
-        </p>
+      <div class="white-overlay"></div>
+      <div class="container mt-5">
+        <h1
+          class="text-black primary-font text-center text-uppercase display-3"
+        >
+          O NAMA
+        </h1>
       </div>
     </div>
     <!-- ABOUT -->
@@ -109,76 +101,135 @@
           >
             <div class="staff-text">
               <h5 class="text-muted p-font small">Juliet B.C.</h5>
-              <h2 class="primary-font text-uppercase">Upoznaj naš tim</h2>
+              <h2 class="primary-font text-uppercase">upoznaj naš tim</h2>
               <hr class="w-5" />
               <p class="p-font mb-4">
                 Naš tim čine profesionalci sa velikim iskustvom iza sebe i tu su
                 da ispune sve Vaše želje i zahteve.
               </p>
-              <a href="#" id="workersToggle" class="primary-btn"
-                >Pročitaj više</a
-              >
+              <a href="#workers" class="primary-btn">pročitaj više</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- workers -->
     <div id="workers">
       <div class="container-fluid p-0">
-        <div class="row m-0" id="workerOne"></div>
-        <div class="row m-0 worker-2" id="workerTwo"></div>
-      </div>
-    </div>
-    <!-- TESTIMONIALS -->
-    <div
-      id="testimonials"
-      class="d-flex justify-content-center align-items-center py-5 position-relative"
-    >
-      <div class="white-overlay"></div>
-      <div class="container">
-        <h5 class="text-muted p-font small text-center">Rekli ste o nama</h5>
-        <h2 class="primary-font text-uppercase text-center">
-          ZADOVOLJNI KLIJENTI
-        </h2>
-        <hr class="w-50 mx-auto" />
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner" id="testimonialsWrap"></div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            id="testimonialPrev"
+        <div class="row m-0">
+          <div class="col-sm-6 p-0">
+            <img src="img/staff-1.jpg" class="img-fluid" alt="img" />
+          </div>
+          <div
+            class="col-sm-6 p-sm-0 bg-light py-5 d-flex justify-content-center align-items-center"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Prethodna</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            id="testimonialNext"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Sledeća</span>
-          </button>
+            <div class="text-center">
+              <h5 class="text-muted p-font small">Juliet B.C.</h5>
+              <h2 class="primary-font text-uppercase">Marija Perić</h2>
+              <hr class="w-50 mx-auto" />
+              <p class="p-font w-75 mx-auto">
+                Marija je pravi proesionalac u svom poslu. Sa sigurnošću joj
+                možete prepustiti svoju kosu i postići efekat kakav želite.
+              </p>
+              <div class="d-flex justify-content-center">
+                <a
+                  href="#"
+                  class="px-sm-4 px-3 text-dark h6 border-start border-end"
+                >
+                  <span
+                    class="iconify"
+                    data-icon="akar-icons:instagram-fill"
+                  ></span> </a
+                ><a
+                  href="#"
+                  class="px-sm-4 px-3 text-dark h6 border-start border-end"
+                >
+                  <span
+                    class="iconify-inline"
+                    data-icon="entypo-social:facebook"
+                  ></span></a
+                ><a
+                  href="#"
+                  class="px-sm-4 px-3 text-dark h6 border-start border-end"
+                >
+                  <span
+                    class="iconify-inline"
+                    data-icon="akar-icons:pinterest-fill"
+                  ></span> </a
+                ><a
+                  href="#"
+                  class="px-sm-4 px-3 text-dark h6 border-start border-end"
+                >
+                  <span
+                    class="iconify-inline"
+                    data-icon="akar-icons:linkedin-box-fill"
+                  ></span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <!-- PRICING -->
-    <div id="pricing" class="py-5">
-      <div class="container">
-        <div class="row" id="pricingPlan"></div>
+        <div class="row m-0 worker-2">
+          <div
+            class="col-sm-6 p-sm-0 py-5 bg-light d-flex justify-content-center align-items-center"
+          >
+            <div class="text-center">
+              <h5 class="text-muted p-font small">Juliet B.C.</h5>
+              <h2 class="primary-font text-uppercase">Nikolina Jovanović</h2>
+              <hr class="w-50 mx-auto" />
+              <p class="p-font w-75 mx-auto">
+                Nikolina je vredna i pažljiva i pravi perfekcionista u crtanju
+                frencha i sređivanju Vaših zanoktica. Ako želite prelepe nokte,
+                koji su brzo gotovi Nikolina je pravi izbor za Vas!
+              </p>
+              <div class="d-flex justify-content-center">
+                <a
+                  href="#"
+                  class="px-sm-4 px-3 text-dark h6 border-start border-end"
+                >
+                  <span
+                    class="iconify"
+                    data-icon="akar-icons:instagram-fill"
+                  ></span> </a
+                ><a
+                  href="#"
+                  class="px-sm-4 px-3 text-dark h6 border-start border-end"
+                >
+                  <span
+                    class="iconify-inline"
+                    data-icon="entypo-social:facebook"
+                  ></span></a
+                ><a
+                  href="#"
+                  class="px-sm-4 px-3 text-dark h6 border-start border-end"
+                >
+                  <span
+                    class="iconify-inline"
+                    data-icon="akar-icons:pinterest-fill"
+                  ></span> </a
+                ><a
+                  href="#"
+                  class="px-sm-4 px-3 text-dark h6 border-start border-end"
+                >
+                  <span
+                    class="iconify-inline"
+                    data-icon="akar-icons:linkedin-box-fill"
+                  ></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 p-0">
+            <img src="img/staff-2.jpg" class="img-fluid" alt="img" />
+          </div>
+        </div>
       </div>
     </div>
     <!-- GALLERY -->
     <div id="gallery">
       <div class="container-fluid" id="galleryWrap"></div>
     </div>
-
     <!-- FOOTER -->
     <footer>
       <div class="container">
@@ -231,7 +282,6 @@
     <!-- Iconify Design -->
     <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
     <!-- Boostrap 5 JS -->
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
